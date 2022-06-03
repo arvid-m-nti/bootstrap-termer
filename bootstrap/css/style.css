@@ -1,0 +1,107 @@
+*{
+    margin:0;
+}   
+
+
+html{
+    /* Font för hela sidan */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    /* Bakgrundsfärg */
+    background-color: darkgrey;
+}
+
+.header{
+    /* Headern ska vara längst upp så då är top: 0 */
+    top:0;
+    /* min-height: 100vh; */
+    /* Bredden ska vara hela sidan. */
+    width: 100%;
+    /* Headerns färg, position och storlek*/
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    background-color: aliceblue;
+    /* Den ska ha en skuggad outline */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-top: 10px;
+}
+.header ul li{
+    /* Enkla grejer för headern */
+    list-style: none;
+    margin-left: 0;
+    display: inline-block;
+    padding: 4px 2px;
+    font-size: 16px;
+    position: relative;
+}
+.links{
+    /* Använder flexbox */
+    text-align: center;
+    flex: 1;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+    font-weight: 350;
+}
+.links a:hover{
+    /* Länkarna ska ändra färg när man hovrar över dom */
+    color: grey;
+}
+.links hr {
+    /* En linje mellan de två raderna av länkarna */
+    margin-top: 0.3em;
+    margin-bottom: 0.25em;
+    margin-left: 25%;
+    margin-right: 25%;  
+}
+
+.row{
+    /* flexbox ska användas */
+    display: flex;
+}
+.column{
+    /* flexbox ska användas */
+    flex: 1;
+}
+.text-box{
+    /* Texten nedanför, margin, position, storlek, padding, mm. */
+    margin-top: 80px;
+
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding-bottom: 490px;
+    max-width: 60%;
+    
+    font-weight: 300;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-top: 0px;
+    padding-left: 50px; 
+    padding-right: 50px;
+    background-color: white;
+    margin-bottom: 80px;
+    
+}
+.text-box h2{
+    /* Rubrik för textboxen */
+    margin-top: 70px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    display: inline-block;
+    border-bottom: 1.5px solid black;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.text-box p{
+    /* Brödtexten för textboxen */
+    font-weight: 350;
+}
+.text-box img{
+    /* Bilder i textboxen */
+    border: 1.5px ridge;
+    height: 200px;
+}
